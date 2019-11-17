@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btn_logout"
+        android:orderInCategory="1"
+        android:title="Log Out"
+        android:icon="@drawable/ic_power_settings_new_black_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/btn_cart"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:title="Cart"
+        android:orderInCategory="2"
+        app:showAsAction="always"
+        />
+
+</menu>

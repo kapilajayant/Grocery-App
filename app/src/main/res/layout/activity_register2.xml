@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity2">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/iv"
+                    android:src="@drawable/ic_artichoke"
+                    />
+
+
+                <EditText
+                    android:id="@+id/et_businessname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/iv"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:hint="Business Name"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:theme="@style/AppTheme"
+                    android:layout_marginTop="10dp"
+                    android:width="220dp" />
+
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/et_businessname"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                    android:hint="Address"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:theme="@style/AppTheme"
+                    android:layout_marginTop="10dp"
+                    android:width="220dp" />
+
+                <EditText
+                    android:id="@+id/et_pan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/et_address"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/ic_description_black_24dp"
+                    android:hint="PAN"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:theme="@style/AppTheme"
+                    android:layout_marginTop="10dp"
+                    android:width="220dp" />
+
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/et_pan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:text="Create Account"
+                    android:padding="10dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="By signing up, you agree to SUBG’s Terms of Service and
+Privacy Policy."
+                    android:layout_below="@id/btn_register"
+                    android:textSize="15dp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="20dp"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

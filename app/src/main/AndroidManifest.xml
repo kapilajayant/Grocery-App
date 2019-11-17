@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.subg">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Account"></activity>
+        <activity android:name=".RegisterActivity2" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settings" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="About Us" />
+        <activity
+            android:name=".OrdersActivity"
+            android:label="Your Orders" />
+        <activity
+            android:name=".cart"
+            android:label="Cart" />
+        <activity android:name=".callregister" />
+        <activity android:name=".ProductDetails" />
+        <activity
+            android:name=".Groceries_list"
+            android:label="Groceries" />
+        <activity
+            android:name=".Vegetables_list"
+            android:label="Vegetables" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_t3si0J5tgWbomG" />
+    </application>
+
+</manifest>

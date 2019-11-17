@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/iv"
+                    android:src="@drawable/ic_artichoke"
+                    />
+
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/iv"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:hint="Name"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:theme="@style/AppTheme"
+                    android:layout_marginTop="10dp"
+                    android:width="220dp" />
+
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/et_name"
+                    android:inputType="phone"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/ic_phone_black_24dp"
+                    android:hint="Phone Number"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:theme="@style/AppTheme"
+                    android:layout_marginTop="10dp"
+                    android:width="220dp" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/et_phone"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:hint="Email"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:theme="@style/AppTheme"
+                    android:layout_marginTop="10dp"
+                    android:width="220dp" />
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/et_email"
+                    android:layout_centerHorizontal="true"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Password"
+                    android:layout_marginTop="10dp"
+                    android:theme="@style/AppTheme"
+                    android:width="220dp"
+                    android:inputType="textPassword" />
+
+
+                <EditText
+                    android:id="@+id/et_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/et_password"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Confirm Password"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_marginTop="10dp"
+                    android:theme="@style/AppTheme"
+                    android:width="220dp"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/et_confirm"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:text="next"
+                    android:padding="10dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already Have An Account? Sign In"
+                    android:layout_below="@id/btn_next"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorPrimary"
+                    android:onClick="SignInActivity"
+                    android:layout_marginBottom="20dp"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
