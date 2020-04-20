@@ -1,5 +1,5 @@
 # Grocery-App
-A Grocery app for android using firebase for database
-* Firebase
+
+* Used Firebase
 * Grocery Ordering App
-* Cart
+* Add to Cart
