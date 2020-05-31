@@ -1,8 +1,8 @@
 {
   "project_info": {
-    "project_number": "441042698470",
+    "project_number": "",
     "firebase_url": "",
-    "project_id": "subg-59309",
+    "project_id": "",
     "storage_bucket": ""
   },
   "client": [
@@ -18,7 +18,7 @@
           "client_id": "",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.subg",
+            "package_name": "",
             "certificate_hash": ""
           }
         },
